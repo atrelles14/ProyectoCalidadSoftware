@@ -1,0 +1,411 @@
+@charset "ISO-8859-1";
+/*  Tipo de letra para los formularios*/
+@import url('https://fontsfonts.googleapis.com/css2?family=Concert+One&display=swap');
+/*  Tipo de letra para el body*/
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+/*  Tipo de letra para titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+/*
+  COLORES USADOS
+  --TITULOS
+  #5F9E8B
+  --BOTONES
+  #3fb8af
+  --FONDO
+  #a8e6ce
+  background: rgb(9,188,186);
+  background: linear-gradient(90deg, rgba(9,188,186,1) 0%, rgba(78,90,214,1) 22%, rgba(78,90,214,1) 76%, rgba(9,188,186,1) 100%);
+  #0097B2
+  #F46A61*/
+  
+
+  /* Css página HOME*/
+body{
+    background-color:   #a8e6ce;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+
+.header{
+    background-color:white;
+    display: flex;/* ajusta el contenido segun el espacio disponible*/
+    justify-content: space-between; /* controla la alineación de los elementos para que ocupen el espacio disponible*/
+    align-items: center;
+    height: 170px;
+    margin-bottom: 5%;
+   
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 170px;
+    width: auto;
+    margin: 5%;
+    
+}
+
+
+
+.header .links{
+    list-style: none;  /* quita las viñetas*/
+    font-weight: bold;
+    font-size: 23px;
+    
+}
+
+.header .links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+
+
+.header .links a{
+    font-size: 18px;
+    color: #696758;
+    text-decoration: none; 
+    letter-spacing: 1px; /*espaciado entre los caracteres de un texto*/
+   
+}
+
+
+.header .links li a:hover{
+    color:   #0097B2;
+}
+
+.header .boton button{
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background: rgb(9,188,186);
+ 
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; /* a todo el boton, durante 3 segundos, sera suave y gradual e inicia de inmediato*/
+}
+
+.header .boton button:hover{
+    background-color: #e2f1f8;
+    color: #0097B2;
+    transform: scale(1.1);    /* aumenta a 110 % su tamaño */
+}
+
+ 
+
+
+
+
+h1{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 50px;
+}
+
+p{
+  color: black;
+  font-family: 'Signika', sans-serif;
+}
+
+a{
+	
+	
+        text-decoration: none; 
+        font-weight: bold; 
+        color: black;
+}
+
+
+
+
+
+.enviar{
+  border: none;
+  background-color:#3fb8af;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 10px 20px;
+  color: #ffffff; 
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 85px;
+
+}
+ 
+
+
+  /* CSS del formulario ciencia*/
+  .formc{
+   
+    justify-content: center;
+    align-items: center;   /* alinea en el centro*/
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: grid;/* alinea los elementos en columnas*/
+    margin: auto;
+    place-items: center;/* alinea en el centro, usa grid*/
+
+  }
+  label {
+    
+    margin-top: 20px;
+    color: #333333; 
+    font-weight: bold;
+    display: flex;
+    font-size: 18px;
+  }
+  .titulo-form{
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    font-weight: 500;
+    display: block;
+  }
+  .titulo-form h1 {
+  margin-right: 10px;
+  color: #5F9E8B;
+}
+
+.titulo-form img {
+  max-height: 100%;
+}
+   .titulo-form p{
+   font-size: 25px;
+   }
+
+ 
+
+  .formularioC input{
+    width: 125%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+
+
+  }
+ 
+
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+   .enviarForm{
+    border: none;
+    background-color:#3fb8af;
+    display: block;/* elementos uno debajo de otro*/
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px 20px;
+    color: #ffffff; 
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+    .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+    margin-bottom: 1%;
+
+      }
+ 
+.menu .links{
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+    gap: 10px 20px;
+    
+}
+
+.menu.links li{
+    display: inline-block;
+    padding: 0 20px;   
+    align-self: flex-start;  /* alinea en la parte superior del eje vertica*/
+}
+
+.menu.links a{
+    font-size: 400;
+    color: #696758;
+    text-decoration: none; 
+    letter-spacing: 1px; /*espaciado entre los caracteres de un texto*/
+   
+}
+
+.menu .links li a:hover{
+    color:#696758;
+}
+
+.boton2 button{
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background: rgb(9,188,186);
+ 
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.boton2 button:hover{
+    background-color: #e2f1f8;
+    color: #0097B2;
+    transform: scale(1.1);
+}
+footer {
+        text-align: center; 
+    background-color: white;
+    margin: 0%;
+    
+    width: 100%;
+    height: 170px;
+    padding: 20px;
+    text-align:center;
+}
+
+
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  /*El titulo debe ser el mismo tipo de letra en todas las paginas*/
+  .titulo-home{
+    font-family: 'concert one', cursive;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  
+  /*estilo para centrar los videos dentro de la pagina de home de SoloCiencia*/
+  .center-home{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    margin: auto;
+   
+  }
+  
+  .center-home a{
+  font-size: 15px;
+  color: #3fb8af;
+      
+  }
+  .center-home p{
+  font-size: 20px;
+  
+      
+  }
+   .center-home h2{
+  font-size: 25px;
+ 
+  }
+  
+  .desc-home{
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  /*estilo para los footers dentro de la pagina de home solo ciencia*/
+  .footer-home{
+    text-align: center;
+    font-family: 'concert one', cursive;
+    font-size: 20px;
+  }
+  
+  
+  
+section{
+  text-align: center; 
+}
+div{
+  text-align: center;
+}
+
+table{
+  border-collapse: collapse; 
+  margin-left: auto; 
+  margin-right: auto;
+  }
+
+td{
+  border: 2px solid #000000;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  }
+ .a{
+  color: #000000;
+  text-decoration: none;
+  padding-top: 10px;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+ }
+ .td:hover{
+  background-color: #031FA2;
+  color: white;
+  }
+  .tdblanco{
+  visibility: hidden;
+  border: none ;
+  }
+
+  .tdmorado{
+      background-color: mediumorchid ;
+      }
+  .tdceleste{
+      background-color: aqua ;
+      }
+  .tdrosado{
+      background-color:pink ;
+      }
+  .tdcrema{
+      background-color: #FFB266 ;
+      }
+  .tdamarillo{
+      background-color: yellow ;
+      }
+  .tdcremaoscuro2{
+      background-color: rgb(207, 127, 48) ;
+      }
+  .tdcremaoscuro{
+      background-color: #ff8000;
+      }
+  .tdgris{
+      background-color: silver;
+      }
+  .tdverde{
+      background-color:  greenyellow;
+      }
